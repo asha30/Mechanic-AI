@@ -1,0 +1,41 @@
+/* Navbar container styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Set the navbar background color */
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Keeps the navbar above other elements */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+  }
+  
+  /* Styling for each nav link */
+  .nav-link {
+    color: white; /* Link text color */
+    background-color: transparent; /* Transparent background to match navbar */
+    padding: 8px 16px; /* Padding for clickable area */
+    border-radius: 4px;
+    text-decoration: none;
+    margin-right: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .nav-link:hover {
+    background-color: #555; /* Background color on hover */
+    color: #00fffc; /* Text color on hover */
+  }
+  
+  /* Optional: add right margin to all links except the last one */
+  .nav-link:last-child {
+    margin-right: 0;
+  }
+  
+  /* Push the rest of the content below the fixed navbar */
+  .content {
+    margin-top: 80px; /* Adjust to match the height of your navbar */
+  }
+  
