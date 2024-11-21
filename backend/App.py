@@ -9,7 +9,7 @@ CORS(app, supports_credentials=True, origins=["http://localhost:5173"])
 
 # Initialize the LLaMA model with Ollama
 #llm = ChatOllama(model="llama3.2:3b", temperature=0.35)
-llm=ChatGroq(groq_api_key="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")
+# llm=ChatGroq(groq_api_key="")
 
 @app.route('/api/chat', methods=['POST'])
 def chat():
